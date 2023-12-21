@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+.start_btn_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.start_btn_container .start_game_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  background-color: aqua;
+}
