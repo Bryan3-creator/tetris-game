@@ -42,3 +42,30 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.arrow_btns_container {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.top {
+  align-self: center;
+}
+.arrow_btn {
+  padding: 10px;
+  border: none;
+  font-size: 24px;
+  background: none;
+  outline: none;
+  border-radius: 12px;
+  transition: all 0.25s linear;
+}
+.arrow_btn:focus {
+  border: 1px solid aqua;
+}
