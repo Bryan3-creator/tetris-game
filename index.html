@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tetris game</title>
   </head>
   <body>
-    <div class="start_btn_container invisible">
-      <button class="start_game_btn">Start game</button>
+    <div class="game_over_alert invisible">
+      <div class="game_over_content">
+         <button class="close_btn">
+         <i class="fa-sharp fa-solid fa-xmark"></i>
+       </button>
+      <strong>Game over</strong>
+      </div>  
     </div>
-    <div class="canvas_container">
+    <div class="start_btn_container">
+      <button class="start_game_btn">
+       <strong>Start <span>game</span></strong> 
+      </button>
+    </div>
+    <section class="container invisible">
+       <div class="game_info_container">
+      <strong>Score: <span class="score">0</span></strong>
+    </div>
+      <div class="canvas_container">
       <canvas><canvas> 
     </div>
-    <div class="arrow_btns_container">
+    </section>
+    <div class="arrow_btns_container invisible">
       <button class="arrow_btn top">⬆️</button>
       <div class="inline_arrows_continer">
         <button class="arrow_btn left">⬅️</button>
