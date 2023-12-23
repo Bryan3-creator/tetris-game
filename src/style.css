@@ -73,7 +73,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+}
+.arrow_btns_container .inline_arrows_continer {
+  display: flex;
+  gap: 20px;
 }
 .top {
   align-self: center;
